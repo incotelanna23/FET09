@@ -56,3 +56,15 @@ git log --oneline one line per commit
 Working Area - Not yet saved, Git doesn't know these changes exist yet
 Staging Area - Letting Git know these files exist
 Commit Stage - Files are saved
+
+
+=== BRANCHING ===
+
+- List all of the branches
+git branch -a
+
+- Create a new branch
+git branch [branch-name]
+
+- Switch into a new branch
+git switch [branch-name]
