@@ -1,3 +1,58 @@
-git config --global user.name "incotelanna23"
+- Initialize a repository
+git init
+
+- Configure the username
+git config --global user.name "username"
+git config user.name
+
+- Configure the email
+git config --global user.email "email"
+git config user.email
+
+- Check the status of the files
+git status
+
+- Add the modified files into the staging area
+git add . 
+
+- Create a commit
+git commit -m "This is the description."
+
+- View the commit history
+git log
+git log --oneline
+
+
+git config --global user.name "username"
 
 git config --global user.name
+
+git config --global user.email "email"
+
+git config user.email
+
+git init
+
+git status 
+
+git add .
+
+git commit -m "This is the description"
+
+git log full details per commit
+commit 
+
+113aec7d3b65307aad0175394ec30231ed9f5fe4 (HEAD 
+-> master)
+Author: incotelanna23 <twispro.ananya@gmail.com>      
+Date:   Wed Jul 24 05:47:31 2024 +0530
+
+    Create the notes for Mastering CLI and Git and GitHub
+
+git log --oneline one line per commit
+
+
+
+Working Area - Not yet saved, Git doesn't know these changes exist yet
+Staging Area - Letting Git know these files exist
+Commit Stage - Files are saved
