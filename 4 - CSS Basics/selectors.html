@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selector Samples</title>
+  <style>
+    /* Element Selector */
+    span{
+      background-color: green;
+      color: white;
+    }
+    /* Class Selector */
+    .class-name{
+      color: red;
+      background-color: black;
+    }
+    /* ID Selector */
+    #id-name{
+      font-weight: bold;
+    }
+    /* Universal Selector */
+    *{
+      font-family: Arial, sans-serif;
+    }
+    /* Grouping Selector */
+    h1,h2, .parag{
+      color: orangered;
+    }
+    /* Descendant selector */
+    .ancestor p {
+      font-style: italic;
+      color: cadetblue;
+    }
+    /* Pseudo-classes  */
+    a:hover{
+      color: red;
+      font-size: 50px;
+    }
+    /* Pseudo-elements */
+    .quote::before, .quote::after{
+      content: "'";
+      color:aqua;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Element Selector -->
+   <span>This is styled using an element selector.</span>
+  <!-- Class Selector -->
+   <p class="class-name">This is styled using a class selector.</p>
+   <p class="class-name">This is styled using a class selector.</p>
+  <!-- ID Selector -->
+   <p id="id-name">This is styled using ID selector</p>
+  <!-- Universal Selector -->
+   <div>This is styled using the universal selector</div>
+   <p>This is also styled using the universal selector.</p>
+   <hr>
+   <!-- Grouping Selector -->
+    <h1>Welcome to my Website!</h1>
+    <p class="parag">This is a paragraph of text</p>
+    <br>
+    <h1>About Me</h1>
+    <p class="parag">This is another paragraph of text.</p>
+    <!-- Descendant selector -->
+    <div class="ancestor">
+      <p>This is styled using a descendant selector</p>
+    </div>
+    <!-- Pseudo-classes -->
+    <a href="#">This is styled using a pseudo-class.</a>
+    <!-- Pseudo-elements -->
+    <p class="quote">This is inspirational.</p>
+</body>
+</html>

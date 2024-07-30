@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <!-- Forms  -->
+   <form>
+    <h3>Sample Form</h3>
+    <!-- Inputs (Text, Number, Password, Email)-->
+    <label for="name">Username:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="age">Age:</label>
+    <input type="number" name="age" id="age" min="18" max="99">
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" id="password" min="8">
+    <br>
+    <label for="email">Email Id:</label>
+    <input type="email" name="email" id="email" placeholder="sample@gmail.com" required>
+    <br>
+
+    <!-- Textarea -->
+     <label for="message">Message:</label>
+     <textarea name="message" id="message" rows="5" cols="22" style="resize: none;"></textarea>
+     <br>
+     <!-- Select/ Dropdown Menu -->
+      <label for="favorite-food">Favorite Food</label>
+      <select name="favorite-food" id="favorite-food">
+        <option selected disabled hidden>---Select a Food--</option>
+        <option value="pizza">Pizza</option>
+        <option value="steak">Steak</option>
+        <option value="Momo">Momo</option>
+      </select>
+      <br>
+      <!-- Radio Buttons -->
+       <input type="radio" value="" id="option1" name="options">
+       <label for="option1">Option 1</label>
+       <input type="radio" value="" id="option2" name="options">
+       <label for="option1">Option 2</label>
+       <input type="radio" value="" id="option3" name="options">
+       <label for="option3">Option 3</label>
+       <br>
+       <!-- Checkboxes -->
+        <input type="checkbox" name="checkboxes" id="check1" value="check1">
+        <label for="check1">Check 1</label>
+        <input type="checkbox" name="checkboxes" id="check2" value="check2">
+        <label for="check2">Check 2</label>
+        <input type="checkbox" name="checkboxes" id="check3" value="check3">
+        <label for="check3">Check 3</label>
+        <br><br>
+        <!-- Buttons -->
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+   </form>
+   <br><br>
+   <!-- Tables  -->
+    <table border="1" width="200px">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Ananya</td>
+          <td>30 yesrs old</td>
+        </tr>
+        <tr>
+          <td>Vancouver</td>
+        </tr>
+        <tr>
+          <td>Soumya</td>
+          <td>31 yesrs old</td>
+        </tr>
+        <tr>
+          <td colspan="2">Total: 2 people</td>
+        </tr>
+      </tbody>
+      <tfoot></tfoot>
+    </table>
+</body>
+</html>

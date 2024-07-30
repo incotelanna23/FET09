@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Basics: Typography, Text Decor, Colors and Units</title>
+  <style>
+    html{
+      font-size: 30px;
+    }
+    .text-styling{
+      font-family: "Arial",sans-serif;
+      font-weight: bold;
+      font-style: italic;
+      text-align: center;
+      line-height: 3;
+      letter-spacing: 1px;
+    }
+
+    .text-decor{
+      text-decoration: underline;
+      text-decoration: none;
+    }
+    .text-color{
+      /* keywords */
+      color: blanchedalmond;
+      background-color: black;
+
+      /* hex colors */
+      /* #RRGGBB, 0-9 then A-F */
+      color: #26658c;
+
+      /* rgb / rgba  */
+      /* rgb(red,green,blue) 
+        max rgb(255,255,255)
+      */
+      color: rgba(39, 162, 239, 0.79);
+    }
+    .absolute{
+      font-size: 24px;
+    }
+    .relative-unit-em{
+      /* default size is 16px so 2em means 2*16px 32px if you use em then ignores inline style */
+      font-size: 2em;
+    }
+    .relative-unit-rem{
+      font-size: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h2>CSS Typography</h2>
+  <div class="text-styling">This is a sample sentence.</div>
+  <h2>CSS Text Decoration</h2>
+  <div class="text-decor" align="center">This is another sample sentence.</div>
+  <h2>CSS Colors</h2>
+  <div class="text-color">This is a colorful sentence.</div>
+  <h2>CSS units of Measurement</h2>
+  <span class="absolute">Absolute Units(px)</span>
+  <div style="font-size: 20px;">
+    <span class="relative-unit-em">Relative Unit (em)</span>
+    <span class="relative-unit-rem">Relative Unit (rem)</span>
+  </div>
+</body>
+</html>

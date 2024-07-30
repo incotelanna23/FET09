@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Padding, Margin and Border</title>
+  <style>
+    .box{
+      background-color: antiquewhite;
+      height: 150px;
+      width: 150px;
+    }
+    .padding{
+      /* set on all sides */
+      padding: 20px; 
+      
+      /* top and bottom, left and right */
+      padding: 20px 10px;
+
+      /* top || left and right || bottom */
+      padding: 20px 10px 30px;
+
+      /* top ||  right || bottom || left */
+      padding: 20px 10px 30px 40px;
+
+      padding-left: 50px;
+    }
+    .margin{
+      /* 1-4 values function in the same way as possible */
+      margin: 20px 10px;
+      margin-right: 50px;
+    }
+    .border{
+      border: 3px solid black;
+      border-width: 10px;
+      border-style: solid;
+      border-color: aqua;
+      border-left-color: black;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Padding</h2>
+  <div class="padding box">
+    <p>This uses padding.</p>
+  </div>
+  <h2>Margin</h2>
+  <div class="margin box">
+    <p>This uses margin.</p>
+  </div>
+  <h2>Border</h2>
+  <div class="border box">
+    <p>This uses border</p>
+  </div>
+</body>
+</html>
